@@ -1,0 +1,10 @@
+# created by virtualenv automatically
+
+venv/
+__pycache__/
+*.pyc
+*.pkl
+.DS_Store
+.env
+
+.ipynb_checkpoints/
