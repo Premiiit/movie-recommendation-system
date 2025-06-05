@@ -1,12 +1,15 @@
 import streamlit as st
+from dotenv import load_dotenv
+import os
 import pickle
 import requests
 import time
 
+api_key = os.getenv("API_KEY")
 
 def fetch_poster(movie_id):
     try:
-        url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=8ec7ed039e3c3d87c311d91dbcf255e8"
+        url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}"
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
         }
